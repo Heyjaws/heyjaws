@@ -2,8 +2,6 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/heyjaws',
-  assetPrefix: '/heyjaws/',
   images: {
     unoptimized: true,
   },
