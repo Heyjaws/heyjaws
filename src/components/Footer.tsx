@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Apple, Play } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -36,7 +35,7 @@ export default function Footer() {
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex items-center justify-center space-x-3 bg-white text-navy-900 px-8 py-4 rounded-2xl font-semibold hover:bg-navy-100 transition-colors"
               >
-                <Apple className="w-6 h-6" />
+                <Image src="/apple.svg" alt="Apple" width={24} height={24} />
                 <div className="text-left">
                   <div className="text-xs opacity-70">Download on the</div>
                   <div className="text-lg">App Store</div>
@@ -48,7 +47,7 @@ export default function Footer() {
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex items-center justify-center space-x-3 bg-navy-700 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-navy-600 transition-colors border border-navy-600"
               >
-                <Play className="w-6 h-6 fill-white" />
+                <Image src="/google.svg" alt="Google Play" width={24} height={24} />
                 <div className="text-left">
                   <div className="text-xs opacity-70">Get it on</div>
                   <div className="text-lg">Google Play</div>
