@@ -28,30 +28,20 @@ export default function Footer() {
             <p className="text-navy-300 mb-8 max-w-xl mx-auto">
               Download Heyjaws today and start trading safely with verified neighbors.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-row justify-center gap-4">
               <motion.a
                 href="#"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center justify-center space-x-3 bg-white text-navy-900 px-8 py-4 rounded-2xl font-semibold hover:bg-navy-100 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <Image src="/apple.svg" alt="Apple" width={24} height={24} />
-                <div className="text-left">
-                  <div className="text-xs opacity-70">Download on the</div>
-                  <div className="text-lg">App Store</div>
-                </div>
+                <Image src="/apple.svg" alt="Download on App Store" width={180} height={60} />
               </motion.a>
               <motion.a
                 href="#"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center justify-center space-x-3 bg-navy-700 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-navy-600 transition-colors border border-navy-600"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <Image src="/google.svg" alt="Google Play" width={24} height={24} />
-                <div className="text-left">
-                  <div className="text-xs opacity-70">Get it on</div>
-                  <div className="text-lg">Google Play</div>
-                </div>
+                <Image src="/google.svg" alt="Get it on Google Play" width={180} height={60} />
               </motion.a>
             </div>
           </motion.div>
