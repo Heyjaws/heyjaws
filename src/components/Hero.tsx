@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { Apple, Play, Shield, Users, MapPin, Home, MessageCircle, User, Search, Bell, Heart, Eye, MessageSquare } from 'lucide-react'
-import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -29,18 +28,18 @@ export default function Hero() {
               className="inline-flex items-center space-x-2 bg-navy-100 text-navy-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
             >
               <Shield className="w-4 h-4" />
-              <span>Trusted by 50,000+ neighbors</span>
+              <span>Safe & Verified Trading</span>
             </motion.div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-900 leading-tight mb-6">
-              Trade Safely.
+              Trade Safely,
               <br />
-              <span className="text-gradient">Connect Locally.</span>
+              <span className="text-gradient">Meet Locally in Malaysia.</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-navy-600 mb-8 max-w-lg">
-              The ultimate neighborhood app for safe marketplaces and community connection.
-              Buy, sell, and connect with verified neighbors you can trust.
+              Stop worrying about scams. Join the safest neighborhood marketplace where
+              every neighbor is verified and every trade happens at a secure Jaws Point.
             </p>
 
             {/* Download Buttons */}
@@ -72,12 +71,12 @@ export default function Hero() {
               </motion.a>
             </div>
 
-            {/* Stats */}
+            {/* Features */}
             <div className="grid grid-cols-3 gap-6">
               {[
-                { icon: Users, value: '50K+', label: 'Active Users' },
-                { icon: MapPin, value: '200+', label: 'Jaws Points' },
-                { icon: Shield, value: '99.9%', label: 'Safe Trades' },
+                { icon: Shield, value: 'Verified', label: 'Users Only' },
+                { icon: MapPin, value: 'Jaws Points', label: 'Safe Meetups' },
+                { icon: Users, value: 'Local', label: 'Community' },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -87,7 +86,7 @@ export default function Hero() {
                   className="text-center"
                 >
                   <stat.icon className="w-6 h-6 text-navy-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-navy-800">{stat.value}</div>
+                  <div className="text-lg font-bold text-navy-800">{stat.value}</div>
                   <div className="text-sm text-navy-500">{stat.label}</div>
                 </motion.div>
               ))}
@@ -156,7 +155,7 @@ export default function Hero() {
                           <div className="flex-1 py-1">
                             <h4 className="font-semibold text-navy-800 text-sm">Vintage Lamp</h4>
                             <p className="text-xs text-navy-500">Your Area · 2h ago</p>
-                            <p className="font-bold text-navy-800 mt-2">$25</p>
+                            <p className="font-bold text-navy-800 mt-2">RM 25</p>
                           </div>
                         </div>
 
@@ -166,7 +165,7 @@ export default function Hero() {
                           <div className="flex-1 py-1">
                             <h4 className="font-semibold text-navy-800 text-sm">Kitchen Set</h4>
                             <p className="text-xs text-navy-500">Your Area · 5h ago</p>
-                            <p className="font-bold text-navy-800 mt-2">$45</p>
+                            <p className="font-bold text-navy-800 mt-2">RM 45</p>
                           </div>
                         </div>
 
@@ -178,7 +177,7 @@ export default function Hero() {
                           <div className="flex-1 py-1">
                             <h4 className="font-semibold text-navy-800 text-sm">Plant Collection</h4>
                             <p className="text-xs text-navy-500">Your Area · 1d ago</p>
-                            <p className="font-bold text-navy-800 mt-2">$30</p>
+                            <p className="font-bold text-navy-800 mt-2">RM 30</p>
                           </div>
                         </div>
                       </div>

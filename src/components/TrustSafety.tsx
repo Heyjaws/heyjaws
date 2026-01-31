@@ -152,7 +152,7 @@ export default function TrustSafety() {
           </div>
         </motion.div>
 
-        {/* Stats */}
+        {/* Trust Features */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -161,13 +161,13 @@ export default function TrustSafety() {
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16"
         >
           {[
-            { value: '0', label: 'Scam Reports', suffix: '' },
-            { value: '99.9', label: 'Safe Trades', suffix: '%' },
-            { value: '100', label: 'Verified Users', suffix: '%' },
+            { value: 'Phone', label: 'Verification', suffix: '' },
+            { value: 'Jaws', label: 'Points', suffix: '' },
+            { value: 'CCTV', label: 'Monitored', suffix: '' },
             { value: '24/7', label: 'Support', suffix: '' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-3xl sm:text-4xl font-bold text-white mb-2">
+              <div className="text-2xl sm:text-3xl font-bold text-white mb-2">
                 {stat.value}{stat.suffix}
               </div>
               <div className="text-navy-300 text-sm">{stat.label}</div>

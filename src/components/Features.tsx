@@ -63,7 +63,7 @@ export default function Features() {
               <p className="text-lg text-navy-600 mb-8">
                 Browse items from verified neighbors in your area. From electronics
                 to furniture, find great deals just around the corner—and meet at
-                safe, verified Jaws Points.
+                secure Jaws Points with CCTV coverage and on-site security.
               </p>
 
               <div className="space-y-4">
@@ -75,8 +75,8 @@ export default function Features() {
                   },
                   {
                     icon: MapPin,
-                    title: 'Jaws Points Meetups',
-                    description: 'Safe, verified locations for in-person exchanges',
+                    title: 'Meet Securely at Jaws Points',
+                    description: 'No more meeting in unfamiliar locations. Trade at CCTV-monitored spots like malls, LRT stations, and residential hubs.',
                   },
                   {
                     icon: Shield,
@@ -133,8 +133,8 @@ export default function Features() {
                   {/* Item Cards */}
                   <div className="space-y-3">
                     {[
-                      { name: 'Vintage Camera', price: '$85', time: '3h ago', color: 'from-amber-100 to-amber-200' },
-                      { name: 'Designer Chair', price: '$120', time: '5h ago', color: 'from-blue-100 to-blue-200' },
+                      { name: 'Vintage Camera', price: 'RM 85', time: '3h ago', color: 'from-amber-100 to-amber-200' },
+                      { name: 'Designer Chair', price: 'RM 120', time: '5h ago', color: 'from-blue-100 to-blue-200' },
                       { name: 'Plant Set', price: 'Free', time: '1d ago', color: 'from-green-100 to-green-200', reserved: true },
                     ].map((item, idx) => (
                       <motion.div
