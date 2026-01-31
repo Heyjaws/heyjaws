@@ -104,25 +104,9 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-navy-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-navy-400 text-sm">
-              © {new Date().getFullYear()} Heyjaws. All rights reserved.
-            </p>
-            <div className="flex space-x-6 text-sm">
-              <Link
-                href="/terms"
-                className="text-navy-400 hover:text-white transition-colors"
-              >
-                Terms & Conditions
-              </Link>
-              <Link
-                href="/privacy"
-                className="text-navy-400 hover:text-white transition-colors"
-              >
-                Privacy Policy
-              </Link>
-            </div>
-          </div>
+          <p className="text-navy-400 text-sm text-center">
+            © {new Date().getFullYear()} Heyjaws. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
