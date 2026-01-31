@@ -2,12 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,42 +63,14 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-navy-800"
+          {/* Mobile Download Button */}
+          <a
+            href="#download"
+            className="md:hidden bg-navy-800 text-white px-4 py-2 rounded-full font-semibold text-sm"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            Download App
+          </a>
         </div>
-
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-white rounded-2xl shadow-xl p-6 mb-4"
-          >
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block py-3 text-navy-700 hover:text-navy-800 font-medium"
-              >
-                {link.name}
-              </a>
-            ))}
-            <a
-              href="#download"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block mt-4 bg-navy-800 text-white px-6 py-3 rounded-full font-semibold text-center"
-            >
-              Download App
-            </a>
-          </motion.div>
-        )}
       </div>
     </motion.nav>
   )
