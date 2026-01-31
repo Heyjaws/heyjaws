@@ -220,41 +220,42 @@ export default function Footer() {
       </footer>
 
       {/* Terms of Service Modal */}
-      <Modal isOpen={termsOpen} onClose={() => setTermsOpen(false)} title="Terms of Service">
+      <Modal isOpen={termsOpen} onClose={() => setTermsOpen(false)} title="Terms and Conditions">
         <div className="prose prose-navy max-w-none">
           <p className="text-navy-600 mb-4">
-            <strong>Last updated:</strong> January 2025
+            <strong>Effective Date:</strong> February 1, 2026
           </p>
 
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">1. Acceptance of Terms</h3>
-          <p className="text-navy-600 mb-4">
-            By accessing or using the Heyjaws mobile application and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
-          </p>
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 1: Definitions</h3>
+          <ul className="text-navy-600 mb-4 list-disc pl-5 space-y-2">
+            <li><strong>&quot;Company&quot;</strong>: Refers to Heyjaws, the provider and operator of the Service.</li>
+            <li><strong>&quot;Service&quot;</strong>: The Heyjaws mobile application, website, and all related digital platforms.</li>
+            <li><strong>&quot;User&quot;</strong>: Any individual who registers an account and utilizes the Service.</li>
+            <li><strong>&quot;Meetup&quot;</strong>: Any online or offline social gathering or event organized or joined by Users through the Service.</li>
+            <li><strong>&quot;Jaws Points (Safe Zones)&quot;</strong>: Specific physical locations recommended by the Company as preferred meeting spots for face-to-face transactions.</li>
+            <li><strong>&quot;Marketplace&quot;</strong>: The platform feature allowing Users to buy, sell, and trade goods within their local communities.</li>
+          </ul>
 
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">2. User Accounts</h3>
-          <p className="text-navy-600 mb-4">
-            You must provide accurate and complete information when creating an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
-          </p>
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 2: Eligibility and Account Safety</h3>
+          <ul className="text-navy-600 mb-4 list-disc pl-5 space-y-2">
+            <li><strong>Age Requirement:</strong> You must be at least 18 years old to use the Service.</li>
+            <li><strong>Verification:</strong> Identity verification via phone number and/or email address is required to enhance community trust and prevent fraudulent activities.</li>
+            <li><strong>Responsibility:</strong> Users are solely responsible for maintaining the security of their accounts and passwords.</li>
+          </ul>
 
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">3. Community Guidelines</h3>
-          <p className="text-navy-600 mb-4">
-            Users must treat others with respect and follow our community guidelines. Prohibited activities include harassment, fraud, posting illegal content, and misrepresentation of identity.
-          </p>
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 3: User Conduct and Zero-Tolerance Policy</h3>
+          <ul className="text-navy-600 mb-4 list-disc pl-5 space-y-2">
+            <li><strong>Zero-Tolerance:</strong> Heyjaws maintains a zero-tolerance policy for objectionable content (defamatory, obscene, or offensive) or abusive behavior.</li>
+            <li><strong>Termination:</strong> The Company reserves the right to immediately suspend or terminate access for any User who violates these standards, without prior notice.</li>
+          </ul>
 
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">4. Marketplace Rules</h3>
-          <p className="text-navy-600 mb-4">
-            All items listed for sale must comply with local laws. Users are responsible for the accuracy of their listings. Heyjaws is not responsible for the quality, safety, or legality of items traded.
-          </p>
-
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">5. Limitation of Liability</h3>
-          <p className="text-navy-600 mb-4">
-            Heyjaws provides a platform for neighborhood connections and is not liable for disputes between users, the quality of items traded, or any damages arising from the use of our services.
-          </p>
-
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">6. Changes to Terms</h3>
-          <p className="text-navy-600">
-            We reserve the right to modify these terms at any time. Continued use of the service after changes constitutes acceptance of the new terms.
-          </p>
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 4: Marketplace and Jaws Points Disclaimer</h3>
+          <ul className="text-navy-600 mb-4 list-disc pl-5 space-y-2">
+            <li><strong>Neutral Venue:</strong> The Company acts as a neutral platform and is not a party to any transactions between Users.</li>
+            <li><strong>Safety Disclaimer:</strong> Jaws Points are recommended for convenience only.</li>
+            <li><strong>Assumption of Risk:</strong> The Company does not guarantee absolute safety at Jaws Points.</li>
+            <li><strong>No Liability:</strong> Users assume all risks for transactions and meetings. The Company is not liable for any incidents, injuries, or damages occurring at these locations.</li>
+          </ul>
         </div>
       </Modal>
 
