@@ -28,20 +28,32 @@ export default function Footer() {
             <p className="text-navy-300 mb-8 max-w-xl mx-auto">
               Download Heyjaws today and start trading safely with verified neighbors.
             </p>
-            <div className="flex flex-row justify-center gap-4">
+            <div className="flex flex-row justify-center items-center gap-4">
               <motion.a
                 href="#"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Image src="/apple.svg" alt="Download on App Store" width={180} height={60} />
+                <Image
+                  src="/apple.svg"
+                  alt="Download on App Store"
+                  width={120}
+                  height={40}
+                  className="h-[40px] w-auto"
+                />
               </motion.a>
               <motion.a
                 href="#"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Image src="/google.svg" alt="Get it on Google Play" width={180} height={60} />
+                <Image
+                  src="/google.svg"
+                  alt="Get it on Google Play"
+                  width={135}
+                  height={40}
+                  className="h-[40px] w-auto"
+                />
               </motion.a>
             </div>
           </motion.div>
