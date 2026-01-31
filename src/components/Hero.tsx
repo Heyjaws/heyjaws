@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Apple, Play, Shield, Users, MapPin, Home, MessageCircle, User, Search, Bell, Heart, Eye, MessageSquare } from 'lucide-react'
+import { Shield, Users, MapPin, Home, MessageCircle, User, Search, Bell, Heart, Eye, MessageSquare } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -37,39 +37,10 @@ export default function Hero() {
               <span className="text-gradient">Meet Locally in Malaysia.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-navy-600 mb-8 max-w-lg">
+            <p className="text-lg sm:text-xl text-navy-600 mb-12 max-w-lg">
               Stop worrying about scams. Join the safest neighborhood marketplace where
               every neighbor is verified and every trade happens at a secure Jaws Point.
             </p>
-
-            {/* Download Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12" id="download">
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="flex items-center justify-center space-x-3 bg-navy-800 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-navy-900 transition-all shadow-xl hover:shadow-2xl"
-              >
-                <Apple className="w-6 h-6" />
-                <div className="text-left">
-                  <div className="text-xs opacity-80">Download on the</div>
-                  <div className="text-lg">App Store</div>
-                </div>
-              </motion.a>
-
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="flex items-center justify-center space-x-3 bg-white text-navy-800 px-8 py-4 rounded-2xl font-semibold border-2 border-navy-200 hover:border-navy-300 transition-all shadow-lg hover:shadow-xl"
-              >
-                <Play className="w-6 h-6 fill-navy-800" />
-                <div className="text-left">
-                  <div className="text-xs opacity-80">Get it on</div>
-                  <div className="text-lg">Google Play</div>
-                </div>
-              </motion.a>
-            </div>
 
             {/* Features */}
             <div className="grid grid-cols-3 gap-6">
