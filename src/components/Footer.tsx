@@ -263,37 +263,48 @@ export default function Footer() {
       <Modal isOpen={privacyOpen} onClose={() => setPrivacyOpen(false)} title="Privacy Policy">
         <div className="prose prose-navy max-w-none">
           <p className="text-navy-600 mb-4">
-            <strong>Last updated:</strong> January 2025
+            <strong>Effective Date:</strong> February 1, 2026
           </p>
 
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">1. Information We Collect</h3>
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 1: Collection of Personal Data</h3>
+          <p className="text-navy-600 mb-2">
+            In compliance with the Malaysian Personal Data Protection Act 2010 (PDPA), we collect:
+          </p>
+          <ul className="text-navy-600 mb-4 list-disc pl-5 space-y-2">
+            <li><strong>Identity Data:</strong> Phone number, email address, nickname, and profile information.</li>
+            <li><strong>Content Data:</strong> Posts, photos, and comments shared in Meetups or the Marketplace.</li>
+            <li><strong>Location Data (Optional):</strong> Approximate or precise location data to help you find nearby Jaws Points or local Meetups, collected only with your explicit consent.</li>
+            <li><strong>Cookies:</strong> We may use cookies to optimize web service performance. Users can manage cookie preferences through their browser settings.</li>
+          </ul>
+
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 2: Purpose of Processing</h3>
+          <p className="text-navy-600 mb-2">Your data is processed to:</p>
+          <ul className="text-navy-600 mb-4 list-disc pl-5 space-y-2">
+            <li>Provide and manage core features (Marketplace, Meetups).</li>
+            <li>Verify identities and provide account recovery services via email or SMS.</li>
+            <li>Offer location-based neighborhood features and support customer inquiries.</li>
+          </ul>
+
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 3: Disclosure and Security</h3>
+          <ul className="text-navy-600 mb-4 list-disc pl-5 space-y-2">
+            <li><strong>Third Parties:</strong> We utilize trusted providers like Google Firebase for secure hosting and authentication.</li>
+            <li><strong>Security:</strong> We implement industry-standard encryption and access controls to protect your personal data.</li>
+          </ul>
+
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 4: Data Retention and Deletion</h3>
+          <ul className="text-navy-600 mb-4 list-disc pl-5 space-y-2">
+            <li><strong>Retention Period:</strong> We retain your personal data only for as long as your account is active or as needed to provide the Service.</li>
+            <li><strong>Deletion Upon Request:</strong> If you delete your account via the App, all personal data will be permanently deleted from our servers immediately.</li>
+            <li><strong>Inactivity:</strong> If your account remains inactive for more than 12 months, we may delete your data after providing notice via email or SMS.</li>
+            <li><strong>Safe Destruction:</strong> Digital records are permanently overwritten or deleted using secure methods that ensure they cannot be recovered.</li>
+          </ul>
+
+          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">Section 5: Your Rights and Contact</h3>
           <p className="text-navy-600 mb-4">
-            We collect information you provide directly, including your name, phone number, email address, and profile information. We also collect location data to provide neighborhood-based services.
+            Under the Malaysian PDPA, you have the right to access, correct, or withdraw consent for data processing. In the event of any discrepancies between language versions, the English version shall prevail.
           </p>
-
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">2. How We Use Your Information</h3>
-          <p className="text-navy-600 mb-4">
-            Your information is used to provide and improve our services, verify your identity, enable community features, and ensure the safety of our platform.
-          </p>
-
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">3. Information Sharing</h3>
-          <p className="text-navy-600 mb-4">
-            We do not sell your personal information. We may share information with service providers who assist in operating our platform, or when required by law.
-          </p>
-
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">4. Data Security</h3>
-          <p className="text-navy-600 mb-4">
-            We implement industry-standard security measures to protect your information. However, no method of transmission over the internet is 100% secure.
-          </p>
-
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">5. Your Rights</h3>
-          <p className="text-navy-600 mb-4">
-            You have the right to access, correct, or delete your personal information. You can manage your privacy settings within the app or contact us for assistance.
-          </p>
-
-          <h3 className="text-lg font-semibold text-navy-900 mt-6 mb-3">6. Contact Us</h3>
           <p className="text-navy-600">
-            If you have questions about this Privacy Policy, please contact us at privacy@heyjaws.com.
+            <strong>Email:</strong> hi@heyjaws.co
           </p>
         </div>
       </Modal>
