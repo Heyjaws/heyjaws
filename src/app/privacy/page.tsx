@@ -76,6 +76,24 @@ export default function PrivacyPage() {
                 hi@heyjaws.co
               </a>
             </p>
+
+            <h2 className="text-xl font-semibold text-navy-900 mt-8 mb-4">Section 6: Child Safety Standards</h2>
+            <p className="text-navy-600 mb-4">
+              Heyjaws is intended for users aged 18 and above. We do not knowingly collect personal data from children under the age of 18.
+            </p>
+            <p className="text-navy-600 mb-4">
+              We have zero tolerance for child sexual abuse material (CSAM) or any content that exploits minors. Any such content will be immediately removed, and the associated account will be permanently banned.
+            </p>
+            <p className="text-navy-600 mb-4">
+              Users can report inappropriate content or behavior through the in-app reporting feature. Reports are reviewed promptly, and appropriate action is taken in accordance with applicable laws.
+            </p>
+            <p className="text-navy-600">
+              If you become aware of any child exploitation content, please contact us immediately at{' '}
+              <a href="mailto:hi@heyjaws.co" className="text-navy-800 hover:underline">
+                hi@heyjaws.co
+              </a>
+              .
+            </p>
           </div>
 
           <div className="mt-12 pt-8 border-t border-navy-100">
