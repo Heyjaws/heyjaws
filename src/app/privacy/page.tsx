@@ -41,6 +41,7 @@ export default function PrivacyPage() {
               <li><strong>Identity Data:</strong> Phone number, email address, nickname, and profile information.</li>
               <li><strong>Content Data:</strong> Posts, photos, and comments shared in Meetups or the Marketplace.</li>
               <li><strong>Location Data (Optional):</strong> Approximate or precise location data to help you find nearby Jaws Points or local Meetups, collected only with your explicit consent.</li>
+              <li><strong>Location Verification Data:</strong> To access marketplace features, your precise GPS coordinates are sent to our servers solely to verify your proximity to a designated JAWS Point. These coordinates are processed in real-time and are not stored.</li>
               <li><strong>Cookies:</strong> We may use cookies to optimize web service performance. Users can manage cookie preferences through their browser settings.</li>
             </ul>
 
@@ -54,7 +55,7 @@ export default function PrivacyPage() {
 
             <h2 className="text-xl font-semibold text-navy-900 mt-8 mb-4">Section 3: Disclosure and Security</h2>
             <ul className="text-navy-600 mb-6 list-disc pl-5 space-y-3">
-              <li><strong>Third Parties:</strong> We utilize trusted providers like Google Firebase for secure hosting and authentication.</li>
+              <li><strong>Third Parties:</strong> We utilize trusted providers like Google Firebase for secure hosting and authentication, and Twilio for SMS-based phone number verification.</li>
               <li><strong>Security:</strong> We implement industry-standard encryption and access controls to protect your personal data.</li>
             </ul>
 

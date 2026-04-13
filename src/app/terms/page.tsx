@@ -46,7 +46,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-semibold text-navy-900 mt-8 mb-4">Section 2: Eligibility and Account Safety</h2>
             <ul className="text-navy-600 mb-6 list-disc pl-5 space-y-3">
               <li><strong>Age Requirement:</strong> You must be at least 18 years old to use the Service.</li>
-              <li><strong>Verification:</strong> Identity verification via phone number and/or email address is required to enhance community trust and prevent fraudulent activities.</li>
+              <li><strong>Verification:</strong> Identity verification via email address and phone number (SMS-based OTP) is required at registration. To buy or sell on the Marketplace, Users must complete a location verification by being physically present within 1km of a designated Jaws Point. GPS coordinates are sent to our servers solely for proximity verification and are not stored.</li>
               <li><strong>Responsibility:</strong> Users are solely responsible for maintaining the security of their accounts and passwords.</li>
             </ul>
 
