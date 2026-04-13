@@ -61,7 +61,7 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-semibold text-navy-900 mt-8 mb-4">Section 4: Data Retention and Deletion</h2>
             <ul className="text-navy-600 mb-6 list-disc pl-5 space-y-3">
               <li><strong>Retention Period:</strong> We retain your personal data only for as long as your account is active or as needed to provide the Service.</li>
-              <li><strong>Deletion Upon Request:</strong> If you delete your account via the App, all personal data will be permanently deleted from our servers immediately.</li>
+              <li><strong>Deletion Upon Request:</strong> If you delete your account via the App, all personal data will be permanently deleted from our servers immediately. <Link href="/account-deletion" className="text-navy-800 hover:underline">Learn more about how to delete your account</Link>.</li>
               <li><strong>Inactivity:</strong> If your account remains inactive for more than 12 months, we may delete your data after providing notice via email or SMS.</li>
               <li><strong>Safe Destruction:</strong> Digital records are permanently overwritten or deleted using secure methods that ensure they cannot be recovered.</li>
             </ul>
