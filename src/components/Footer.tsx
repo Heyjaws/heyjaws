@@ -30,7 +30,9 @@ export default function Footer() {
             </p>
             <div className="flex flex-row justify-center items-center gap-4">
               <motion.a
-                href="#"
+                href="https://apps.apple.com/my/app/heyjaws/id6754335753"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -43,7 +45,9 @@ export default function Footer() {
                 />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.mycompany.connectcircles&pcampaignid=web_share"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
